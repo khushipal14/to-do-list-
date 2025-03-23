@@ -1,0 +1,176 @@
+html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Plan</title>
+  <style>
+  body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+  }
+  .daily-plan {
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  }
+  .header {
+  text-align: left;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  }
+  .header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  }
+  .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  }
+  .schedule,
+  .to-do {
+  padding: 10px;
+  }
+  .schedule h3,
+  .to-do h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+  }
+  .schedule ul {
+  list-style: none;
+  padding: 0;
+  }
+  .schedule li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  }
+  .to-do ul {
+  list-style: none;
+  padding: 0;
+  }
+  .to-do li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  }
+  .to-do li span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  }
+  .priorities {
+  grid-column: 1 / -1;
+  padding: 10px 20px;
+  }
+  .priorities h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+  }
+  .priorities ul {
+  list-style: none;
+  padding: 0;
+  }
+  .priorities li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  }
+  .notes {
+  grid-column: 1 / -1;
+  padding: 10px 20px;
+  }
+  .notes h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+  }
+  .notes textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 10px;
+  resize: vertical;
+  }
+  /* Color Palette */
+  .to-do li:nth-child(1) span { background-color: #fdd7df; }
+  .to-do li:nth-child(2) span { background-color: #e1bee7; }
+  .to-do li:nth-child(3) span { background-color: #c3aed0; }
+  .to-do li:nth-child(4) span { background-color: #a7d1eb; }
+  .to-do li:nth-child(5) span { background-color: #89e8de; }
+  .to-do li:nth-child(6) span { background-color: #a3e4d7; }
+  .notes textarea {
+  background-color: #fff9c4;
+  }
+  </style>
+ </head>
+ <body>
+  <div class="daily-plan">
+  <div class="header">
+  <h2>DAILY PLAN</h2>
+  </div>
+  <div class="content">
+  <div class="schedule">
+  <h3>Schedule</h3>
+  <ul>
+  <li>5:00 AM</li>
+  <li>6:00 AM</li>
+  <li>7:00 AM</li>
+  <li>8:00 AM</li>
+  <li>9:00 AM</li>
+  <li>10:00 AM</li>
+  <li>11:00 AM</li>
+  <li>12:00 PM</li>
+  <li>1:00 PM</li>
+  <li>2:00 PM</li>
+  <li>3:00 PM</li>
+  <li>4:00 PM</li>
+  <li>5:00 PM</li>
+  <li>6:00 PM</li>
+  <li>7:00 PM</li>
+  <li>8:00 PM</li>
+  <li>9:00 PM</li>
+  <li>10:00 PM</li>
+  </ul>
+  </div>
+  <div class="to-do">
+  <h3>To Do</h3>
+  <ul>
+  <li><span></span></li>
+  <li><span></span></li>
+  <li><span></span></li>
+  <li><span></span></li>
+  <li><span></span></li>
+  <li><span></span></li>
+  </ul>
+  </div>
+  <div class="priorities">
+  <h3>Priorities</h3>
+  <ul>
+  <li><input type="checkbox"></li>
+    <li><input type="checkbox"></li>
+    <li><input type="checkbox"></li>
+    <li><input type="checkbox"></li>
+  </ul>
+  </div>
+  <div class="notes">
+  <h3>Notes</h3>
+  <textarea></textarea>
+  </div>
+  </div>
+  </div>
+ </body>
+ </html>
+
